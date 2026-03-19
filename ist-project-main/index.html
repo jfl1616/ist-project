@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>IST Department at RIT</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/morphext.css" rel="stylesheet">
+    <link href="css/hover-animate.css" rel="stylesheet">
+    <link href="css/loading-overlay.css" rel="stylesheet">
+</head>
+<body id="page-top">
+<!-- Full Black Screen Loading Overlay with Bouncing Balls -->
+<div id="loading-overlay" class="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" style="z-index: 9999; background: #000000;">
+    <div class="container">
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+    </div>
+</div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <img src="img/ritlogo.jpg" />
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#degree">Degrees</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#employment">Employment Stats</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#people">People</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#research">Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#resource">Resource</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead text-center text-white d-flex">
+        <div class="container my-auto">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h1 class="heading text-uppercase">
+                        <strong>Information Sciences & Technologies @ RIT</strong>
+                    </h1>
+                    <hr>
+                    <h2 class="ist-animation"><span id="js-rotating">Web & Mobile Computing, Human Computer Interaction, Computer Information Technology, Networking & System Administration</span></h2>
+                    <hr>
+                </div>
+                <!--Insert 'About' Content -->
+                <div id="about" class="col-lg-12 mx-auto">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Undergraduate Degrees-->
+    <section class="bg-primary" id="degree">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-heading text-white">IST's Undergraduate Degrees</h2>
+                    <hr class="light my-4">
+                    <!--WMC major-->
+                    <div id="UGaccordion">
+                        <div class="card">
+                            <div class="card-header" id="headingWMC">
+                                <h5 class="mb-0">
+                                    <button id="wmctitle" class="btn btn-link" data-toggle="collapse" data-target="#collapseWMC" aria-expanded="true" aria-controls="collapseWMC">
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseWMC" class="collapse" aria-labelledby="headingWMC" data-parent="#UGaccordion">
+                                <div class="card-body">
+                                    <div class="center-block">
+                                        <img class="img-responsive" src="img/majorIcon/bsWMC.png">
+                                    </div>
+                                    <span id="wmcdescription"></span>
+                                    <hr>
+                                    <p><strong>Concentrations</strong></p>
+                                    <ul id="wmclist" class="list-group list-group-flush"></ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--HCC major-->
+                        <div class="card">
+                            <div class="card-header" id="headingHCC">
+                                <h5 class="mb-0">
+                                    <button id='hcctitle' class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseHCC" aria-expanded="false" aria-controls="collapseHCC">
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseHCC" class="collapse" aria-labelledby="headingHCC" data-parent="#UGaccordion">
+                                <div class="card-body">
+                                    <div class="center-block">
+                                        <img class="img-responsive" src="img/majorIcon/bsHCC.png">
+                                    </div>
+                                    <span id='hccdescription'></span>
+                                    <hr>
+                                    <p><strong>Concentrations</strong></p>
+                                    <ul id="hcclist" class="list-group list-group-flush"></ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--CIT major-->
+                        <div class="card">
+                            <div class="card-header" id="headingCIT">
+                                <h5 class="mb-0">
+                                    <button id='cittitle' class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseCIT" aria-expanded="false" aria-controls="collapseCIT"></button>
+                                </h5>
+                            </div>
+                            <div id="collapseCIT" class="collapse" aria-labelledby="headingCIT" data-parent="#UGaccordion">
+                                <div class="card-body">
+                                    <div class="center-block">
+                                        <img class="img-responsive" src="img/majorIcon/bsCIT.png">
+                                    </div>
+                                    <span id='citdescription'></span>
+                                    <hr>
+                                    <p><strong>Concentrations</strong></p>
+                                    <ul id="citlist" class="list-group list-group-flush"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Graduate Degrees-->
+    <section class="bg-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-heading text-white">IST's Graduate Degrees</h2>
+                    <hr class="light my-4">
+                    <!--IST major-->
+                    <div id="GRADaccordion">
+                        <div class="card">
+                            <div class="card-header" id="headingIST">
+                                <h5 class="mb-0">
+                                    <button id="isttitle" class="btn btn-link" data-toggle="collapse" data-target="#collapseIST" aria-expanded="false" aria-controls="collapseIST">
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseIST" class="collapse" aria-labelledby="headingIST" data-parent="#GRADaccordion">
+                                <div class="card-body">
+                                    <div class="center-block">
+                                        <img class="img-responsive" src="img/majorIcon/msIST.png">
+                                    </div>
+                                    <span id="istdescription"></span>
+                                    <hr>
+                                    <p><strong>Concentrations</strong></p>
+                                    <ul id="istlist" class="list-group list-group-flush"></ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--HCI major-->
+                        <div class="card">
+                            <div class="card-header" id="headingHCI">
+                                <h5 class="mb-0">
+                                    <button id='hcititle' class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseHCI" aria-expanded="false" aria-controls="collapseHCI">
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseHCI" class="collapse" aria-labelledby="headingHCI" data-parent="#GRADaccordion">
+                                <div class="card-body">
+                                    <div class="center-block">
+                                        <img class="img-responsive" src="img/majorIcon/msHCI.png">
+                                    </div>
+                                    <span id='hcidescription'></span>
+                                    <hr>
+                                    <p><strong>Concentrations</strong></p>
+                                    <ul id="hcilist" class="list-group list-group-flush"></ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--NSA major-->
+                        <div class="card">
+                            <div class="card-header" id="headingNSA">
+                                <h5 class="mb-0">
+                                    <button id='nsatitle' class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNSA" aria-expanded="false" aria-controls="collapseNSA">
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseNSA" class="collapse" aria-labelledby="headingCIT" data-parent="#GRADaccordion">
+                                <div class="card-body">
+                                    <div class="center-block">
+                                        <img class="img-responsive" src="img/majorIcon/msNSA.png">
+                                    </div>
+                                    <span id='nsadescription'></span>
+                                    <hr>
+                                    <p><strong>Concentrations</strong></p>
+                                    <ul id="nsalist" class="list-group list-group-flush"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Graduate IST Advanced Certification -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">IST's Graduate Advanced Certificates</h2>
+                    <hr class="my-4">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <div class="service-box mt-5 mx-auto">
+                        <div class="center-block">
+                            <img class="img-responsive" src="img/majorIcon/acWD.png">
+                        </div>
+                        <h3 id="web" class="mb-3"></h3>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="service-box mt-5 mx-auto">
+                        <div class="center-block">
+                            <img class="img-responsive" src="img/majorIcon/acNPD.png">
+                        </div>
+                        <h3 id="networking" class="mb-3"></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Undergraduate Minor-->
+    <section class="masthead">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 text-white">IST's Undergraduate Minors</h1>
+                    <hr class="light my-4">
+                    <!--Insert the minor contents-->
+                    <div id="Minoraccordion"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Insert the employment contents-->
+    <section id="employment" class="bg-dark text-white col-lg-12">
+        <div class="container text-center">
+            <h1 id="introtitle" class="display-4"></h1>
+            <hr />
+            <div class="row">
+                <div class="col-xs-3">
+                    <h2 id="employtitle" class='display4'></h2>
+                    <p id="employdescript" class='lead text-justify'></p>
+                </div>
+                <div class="col-xs-3">
+                    <h2 id="cooptitle" class='display4'></h2>
+                    <p id="coopdescript" class='lead text-justify'></p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center classWithPad">
+            <div class="col-sm-6.">
+                <div class="card text-white bg-primary mb-3 mr-3 h-100" style="max-width: 18rem;">
+                    <div class="card-body">
+                        <h5 id="salarytitle" class="card-title"></h5>
+                        <p id="salarydescript" class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6.">
+                <div class="card text-white bg-secondary mb-3 mr-3 h-100" style="max-width: 18rem;">
+                    <div class="card-body">
+                        <h5 id="ranktitle" class="card-title"></h5>
+                        <p id="rankdescript" class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100 mb-3"></div>
+            <div class="col-sm-6.">
+                <div class="card text-white bg-success mb-3 mr-3 h-100" style="max-width: 18rem;">
+                    <div class="card-body">
+                        <h5 id="percenttitle" class="card-title"></h5>
+                        <p id="percentdescript" class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6.">
+                <div class="card text-white bg-danger mb-3 mr-3 h-100" style="max-width: 18rem;">
+                    <div class="card-body">
+                        <h5 id="traffictitle" class="card-title"></h5>
+                        <p id="trafficdescript" class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center text-center">
+            <div class="col-md-4 h-100 classWithPad">
+                <h5 id="employertitle" class="section-heading"></h5>
+                <ul id="employerlist" class="list-group text-dark"></ul>
+            </div>
+            <div class="col-md-4 h-100 classWithPad">
+                <h5 id="careertitle" class="section-heading"></h5>
+                <ul id="careerlist" class="list-group text-dark"></ul>
+            </div>
+        </div>
+        <div class="row justify-content-center text-center classWithPad">
+            <div class="col-md-6">
+                <button type="button" class="btn btn-primary classWithPad" data-toggle="modal" data-target=".coopTable">Co-op Table</button>
+            </div>
+            <div class="col-md-6">
+                <button type="button" class="btn btn-primary classWithPad" data-toggle="modal" data-target=".employerTable">Professional Employment Table</button>
+            </div>
+        </div>
+        <!--Insert the coopTable Content-->
+        <div class="modal fade coopTable text-dark" tabindex="-1" role="dialog" aria-labelledby="coopTableModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table table-bordered">
+                            <thead class="bg-primary">
+                                <tr>
+                                    <th scope="col">Degree</th>
+                                    <th scope="col">Employer</th>
+                                    <th scope="col">Location</th>
+                                    <th scope="col">Term</th>
+                                </tr>
+                            </thead>
+                            <tbody id='coopTable'></tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Insert the Employer Table Content-->
+        <div class="modal fade employerTable text-dark" tabindex="-1" role="dialog" aria-labelledby="employerTableModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table">
+                            <thead class="bg-primary">
+                                <tr>
+                                    <th scope="col">Degree</th>
+                                    <th scope="col">Employer</th>
+                                    <th scope="col">Location</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Start Date</th>
+                                </tr>
+                            </thead>
+                            <tbody id='employertable'></tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Insert the IST People Content -->
+    <section class="bg-primary" id="people">
+        <div class="col-lg-8 mx-auto text-center">
+            <h1 id="people-title" class="display-4"></h1>
+            <hr />
+            <p id="people-subtitle" class="lead text-center"></p>
+        </div>
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="faculty-button active col mr-3 pt-3 p-3 hvr-shutter-in-horizontal">
+                    <h2>Faculty</h2>
+                </div>
+                <div class="staff-button col pt-3 pb-3 hvr-shutter-in-horizontal">
+                    <h2>Staff</h2>
+                </div>
+            </div>
+            <!--Insert the Faculty-->
+            <div class="faculty">
+                <div class="row"></div>
+            </div>
+            <!--Insert the Staff -->
+            <div class="staff">
+                <div class="row"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Insert the IST Research Content -->
+    <section id="research">
+        <div class="container">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 id="people-title" class="display-4">Our Research</h1>
+                <hr />
+                <p id="people-subtitle" class="lead text-center">To view more about our faculty's research, click below.</p>
+            </div>
+            <!--Insert the Faculty Research-->
+            <div class="faculty-research">
+                <div class="row"></div>
+            </div>
+        </div>
+    </section>
+    <!--Insert the Resource contents-->
+    <section id="resource" class="bg-dark text-white col-lg-12">
+        <div class="container">
+            <h1 class="display-4 text-center" id="resourcetitle"></h1>
+            <hr />
+            <p class="text-center" id="resourcesubtitle"></p>
+            <div class="row">
+                <!--Coop Enrollment -->
+                <div class="col-xs-3">
+                    <h2 id="enrollinfo" class="display4 text-center"></h2>
+                </div>
+                <!-- Student Ambassadors-->
+                <div class="col-xs-3">
+                    <h2 id="studentAmbassadorsTitle" class="display4 text-center"></h2>
+                    <img class="rounded mx-auto d-block img-fluid studentAmbassdorsImage" src="">
+                </div>
+                <!-- Student Services-->
+                <div class="col-xs-3">
+                    <h2 id="studentServicesTitle" class="display4 text-center"></h2>
+                    <!-- IST Minor Advisors-->
+                    <table id="minorAdvisorInformation" class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Title</th>
+                                <th scope="col">Advisor</th>
+                                <th scope="col">Email</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <!-- Professional Advisors-->
+                    <table id="professionalAdvisorInformation" class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Department</th>
+                                <th scope="col">Email</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <!--Study Abroad -->
+                <div class="col-xs-3">
+                    <h2 id="studyAbroadTitle" class="display4 text-center"></h2>
+                    <div class="row justify-content-center classWithPad studyAbroadPlace"></div>
+                </div>
+                <!-- Tutors and Lab -->
+                <div class="col-xs-3">
+                    <h2 id="TutorsAndLabTitle" class="display4 text-center"></h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="bg-secondary mb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <hr class="my-4">
+                    <p class="mb-5">Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 ml-auto text-center">
+                    <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
+                    <p>213-493-6266</p>
+                </div>
+                <div class="col-lg-4 mr-auto text-center">
+                    <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
+                    <p>
+                        <a href="mailto:jose.f.lopez@outlook.com">Jose.F.Lopez@outlook.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="rounded-social-buttons">
+            <a class="social-button facebook" href="https://www.facebook.com/ISTatRIT" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a class="social-button twitter" href="https://twitter.com/RITtigers" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a class="social-button linkedin" href="https://www.linkedin.com/school/rochester-institute-of-technology/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+    <!--Creating the bootstrap modal for Minors -->
+    <div id="minorDialog"></div>
+    <!--Creating the bootstrap modal for Faculty -->
+    <div id="facultyDialog"></div>
+    <!--Creating the bootstrap modal for Staff -->
+    <div id="staffDialog"></div>
+    <!--Creating the bootstrap modal for Research-->
+    <div id="researchDialog"></div>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+    <script src="js/morphext.js"></script>
+    <script src="js/script.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+</body>
+</html>
