@@ -6,7 +6,7 @@ IST-Project is a client side project based on HTML/AJAX site by using jQuery to 
 
 It is available to view the live preview of this project.
 
-* https://ist-project.joseflopezjr.com
+* https://ist.joseflopezjr.com/
 
 ## About
 
